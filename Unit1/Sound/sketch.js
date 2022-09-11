@@ -1,7 +1,7 @@
 let funday ;
 
 function preload() {
-  funday = loadSound("Assets/funday.p3");
+  funday = loadSound("Assets/funday.mp3");
 }
 
 function setup() {
