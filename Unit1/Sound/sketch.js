@@ -20,7 +20,7 @@ function draw() {
 
 function mouseReleased(){
   if (funday.isPlaying()) {
-    funday,pause() ;
+    funday.pause() ;
   } else {
     funday.play() ;
   }
