@@ -15,3 +15,8 @@ function draw() {
   fill("white");
 
 }
+
+
+function touchStarted() {
+  getAudioContext().resume();
+}
