@@ -15,5 +15,5 @@ function draw() {
 textFont(f1, 48);
 text("hello there!", width/2, 100);
 textFont(f2, 24);
-text("I am Obi Wan", width/2, 200);
+text("I will be 23 on Sep. 30th!", width/2, 200);
 }

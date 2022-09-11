@@ -6,7 +6,7 @@ function preload() {
 
 function setup() {
   createCanvas(500, 500);
-  funday = loadSound("Assets/funday.mp3");
+  funday.play() ;
 }
 
 function draw() {
