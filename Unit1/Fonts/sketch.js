@@ -1,4 +1,4 @@
-<reference path="../../libs/TSDef/p5.global-mode.d.ts" /> 
+///<reference path="../../libs/TSDef/p5.global-mode.d.ts" /> 
 
 let f1, f2 ;
 
