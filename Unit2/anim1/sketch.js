@@ -8,7 +8,7 @@ function setup() {
 function draw() {
   background (100);
   rect(x, 100, 100, 100);
-  x = x+1;
+  x += 5;
   if (x>width) {
     x=0;
   }
