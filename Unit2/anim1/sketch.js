@@ -7,9 +7,10 @@ function setup() {
 
 function draw() {
   background (100);
-  rect(x, 100, 100, 100);
+  textSize (128);
+  text("BOOOOOO!!!!", x, 100,);
   x += 5;
   if (x>width) {
-    x=0;
+    x= -500;
   }
 }
