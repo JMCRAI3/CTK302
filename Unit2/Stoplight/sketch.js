@@ -33,7 +33,7 @@ function draw() {
     ellipse(width/2, height/2, 150, 150);
     fill("grey");
     ellipse(width/2, height/2 + 170, 150, 150);
-    v = 4;
+    v = 5;
       break;
 
     case 2: //red light
@@ -42,7 +42,9 @@ function draw() {
     fill("grey");
     ellipse(width/2, height/2, 150, 150);
     ellipse(width/2, height/2 + 170, 150, 150);
-    v = 0;
+    if (x >= width/ 2 && x <= width/2 + v) {
+      v = 0;
+    }
       break;
 
   }
