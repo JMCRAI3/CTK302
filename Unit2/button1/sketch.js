@@ -9,12 +9,12 @@ function draw() {
   switch (state) {
    case 0 :
       background("red") ;
-      text("why did \nthe chicken", width / 2, height / 2) ;
+      text("How long has Anakin Skywalker been evil?", width / 2, height / 2) ;
        break ;
 
     case 1:
       background("blue") ;
-      text("because", width / 2, height / 2) ;
+      text("Since the Sith Grade.", width / 2, height / 2) ;
       break ;
   }
 
