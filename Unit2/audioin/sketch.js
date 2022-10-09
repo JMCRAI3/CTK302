@@ -1,5 +1,6 @@
 let mic;
 let vol = 0;
+let f1;
 
 function setup() {
   createCanvas(400, 400);
@@ -7,16 +8,18 @@ function setup() {
   // code for initializing mic in.
   mic = new p5.AudioIn(); // what does "new" mean?
   mic.start();
+  f1 = loadFont("Assets/Smiley.ttf");
+  textAlign(LEFT);
 }
 
 function draw() {
-  background("green");
+  background("pink");
 
   // get the sound input
   vol = mic.getLevel(); // returned level is between 0 and 1
 
   // text on the screen for debugging
-  textSize(18);
+  textFont(f1,35);
   text(
     "Click the screen first to give\npermission for mic input.\nMy volume is " +
       vol.toFixed(3),
@@ -27,6 +30,7 @@ function draw() {
   // this moves the box
   //  x = vol*200 ;
   x = map(vol, 0, 1, 0, width);
+  fill("black"); 
   rect(x, 200, 50, 50);
 }
 
