@@ -12,9 +12,11 @@ function setup() {
   start = loadImage("Assets/StartScreen.jpg");
   win = loadImage("Assets/WinningScreen.jpg");
   lose = loadImage("Assets/LoosingScreen.jpg");
+  horse = loadImage("Assets/Jumping2.png");
+  jump = loadImage("Assets/Jump2.png");
   // Spawn objects
 
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 5; i++) {
     cars.push(new Car());
   }
 
@@ -32,14 +34,14 @@ function draw() {
       image(start,width/2,height/2);
       fill("black");
       textSize(48);
-      text("Ready to show? \n Click to Start.", 100, 100);
+      text("Ready to show? \n Click to Start.", 300, 500);
       break;
       
       case 1:
       //game screen
       game();
       timer++ ;
-      if (timer > 10*60) {
+      if (timer > 10*70) {
         timer = 0;
         state = 3;
         
@@ -52,7 +54,7 @@ function draw() {
       image(win,width/2,height/2);
       fill("black");
       textSize(48);
-      text("Congratulations! \n 1st Place is Yours!", width/2, height/2);
+      text("Congratulations! \n 1st Place is Yours!", 300, 500);
       break;
       
       case 3: 
@@ -61,7 +63,7 @@ function draw() {
       fill("black");
       textSize(48);
       image(lose,width/2,height/2);
-      text("Losing is tough. \n Try again?", width/2, height/2);
+      text("Losing is tough. \n Try again?", 300, 500);
       break; 
   }
   
@@ -108,7 +110,8 @@ function game() {
 
   // add a "frog"
   fill("green");
-  ellipse(frogPos.x, frogPos.y, 50, 50);
+  //ellipse(frogPos.x, frogPos.y, 50, 50);
+  image(horse, frogPos.x, frogPos.y, 50, 50);
   checkForKeys();
 }
 
