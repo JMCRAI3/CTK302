@@ -14,7 +14,7 @@ function setup() {
 
 
 
-  bunnyImage = loadImage("Assets/Dreamer.JPG");
+  bunnyImage = loadImage("Assets/Gavin.JPG");
   imageMode(CENTER);
   rectMode(CENTER);
 
@@ -62,7 +62,7 @@ function draw() {
   noStroke();
   textSize(300);
   textAlign(CENTER);
-  text("Dreamer", width / 2, height / 2);
+  text("Gavin", width / 2, height / 2);
 
 }
 
